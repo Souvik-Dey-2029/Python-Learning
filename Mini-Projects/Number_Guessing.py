@@ -15,11 +15,11 @@ while g<ch:
     if guess == num:
         print("Hurrah!! You Guessed it Right!!")
         break
-    elif (guess >= num or guess <=num )and g==7:
-        print("Wrong Guess,You Are Out of Attempts!!")
-        print(f"The Correct Number Was {num}")
     elif guess < num:
         print(f"The number You Guessed is Low.....attempts left {ch-g}")
     else:
         print(f"The Number You Gussed is High.....attempts left {ch-g}")
 
+if guess != num:
+    print("Wrong Guess, You Are Out of Attempts!!")
+    print(f"The Correct Number Was {num}")
