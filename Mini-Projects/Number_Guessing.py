@@ -8,6 +8,9 @@ num = random.randint(low,high)
 ch = 7
 g=0
 
+if low >= high:
+    print("Invalid range!")
+
 while g<ch:
     g+=1
     guess= int(input("Enter the Guess number: "))
